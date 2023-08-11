@@ -1,0 +1,64 @@
+
+*{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+input:hover {
+        background-color:white;
+        color:black;
+        transform: scale(0.9);
+        
+        
+}
+#sponsored{
+        min-width:100px;
+        min-height:90px;
+        padding: 10px;
+        margin-left:25px;
+        
+}
+#sponsored {
+        width:20%;
+        height:20%;
+}
+span:hover,box:hover{
+        transform: scale(1);
+      
+}
+a{
+        margin-top:1%;
+}
+a:hover{
+        transform: scale(0.9);
+        background-color: aliceblue;
+        color:white;
+        box-shadow:0px 0px 4px silver;
+        
+}
+#img:hover{
+        transform: scale(1.1)
+        background-color:transparent;
+        
+}
+#product:hover{
+        background-color:transparent;
+       
+        
+}
+text{
+        margin-left: 8%;
+}
+#product-image{
+        min-width:100px;
+        min-height: 100px;
+}
+body{
+        margin-top: 10%!importan;
+}
+body{
+        background-color: white;
+        color:black;
+}
+.dark-mode{
+        background-color: black;
+        color;white;
+}
