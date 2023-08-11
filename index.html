@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flipkart</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link href="//db.onlinewebfonts.com/c/4c1e2c4a8ec30ef2e462af6368444c8f?family=RionaSansW01-BoldItalic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="flipkartlogin.html">
+        <link rel="stylesheet" href="flipkart_notification.html">
+        <link rel="stylesheet" href="flipkart_notification.html">
+        <link rel="stylesheet" href="flipkart-logo-transparent-vector-3.png">
+        <link rel="stylesheet" href="flipkart.profile.html">
+
+</head>
+<script>
+        function myFunction() {
+</script>
+<style>
+        * {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 15px scroll-behavior: smooth !importan;
+
+
+
+        }
+
+
+
+        h5 {
+                font-style: inherit;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bolder;
+                font-size: 20px;
+                justify-content: space-between;
+
+        }
+
+        input:hover {
+                background-color: white;
+                color: black;
+                transform: scale(0.9);
+
+
+        }
+
+        body {
+                background-color: white;
+        }
+
+        span {}
+
+        span:hover,
+        box:hover {
+                transform: scale(0.9);
+
+
+
+
+        }
+
+        box {
+                transform: scale(1.1);
+
+        }
+
+        a {
+                margin-top: 1%;
+
+
+
+
+        }
+
+
+        .carousal {
+                margin-top: 5%;
+                position: relative;
+
+        }
+
+        img:hover {
+                transform: scale(1);
+                color: white;
+        }
+
+        a:hover {
+                transform: scale(0.9);
+
+                color: white;
+
+
+        }
+
+        #navlink:hover {
+                transform: scale(0.9);
+                background-color: lightcyan;
+                transition: 0.2s ease-in-out;
+                border-radius: 8px;
+
+
+
+
+                color: black;
+        }
+
+        #navlink {
+                animation: offcanva 2s ease;
+                background: white;
+                border-radius: 8px;
+        }
+
+        @keyframes offcanva {
+
+                0%,
+                60% {
+                        position: relative;
+                        left: 1000px;
+                }
+
+                100% {
+                        position: relative;
+                        left: 0px;
+                }
+        }
+
+
+
+
+        #log_btn:hover {
+                box-shadow: 0px 0px 8px solid lightcyan;
+                border: 1px solid lightblue;
+        }
+
+        #link:hover a {
+                transform: scale(1);
+
+        }
+
+        #product:hover {
+                background-color: transparent;
+
+
+        }
+
+        text {
+                margin-left: 4%;
+        }
+
+        #product-image {
+                width: 100px;
+                height: 100px;
+        }
+
+        price {
+                color: dark;
+        }
+
+        .main-nav {
+                position: fixed;
+                width: 100%;
+
+                display: block;
+                z-index: 10;
+                animation: Nav 1s ease;
+
+        }
+
+        #navbar {
+                background-color: rgb(237, 252, 252);
+        }
+
+        .alert_box {
+                display: block;
+                position: default;
+
+        }
+
+        #image {
+                height: 160px;
+        }
+
+        #login {
+                display: none;
+        }
+
+        button {
+                translate: 4s ease-in;
+        }
+
+        .continue_shopping {
+                background-color: white;
+                padding: 1%;
+
+        }
+
+        .Recently,
+        .Recent_item {
+                background-color: rgba(224, 213, 230);
+                padding: 1%;
+        }
+
+        .Suggested_Inner_head {
+                justify-content: space-between;
+                display: flex;
+                width: 100%;
+        }
+
+        #Suggested_Items {
+                min-width: 100px;
+                min-height: 140px;
+
+
+
+        }
+
+        .Suggested_Items_Grid {
+                display: grid;
+                display: inline-block;
+                width: 100%;
+                grid: auto auto auto;
+                justify-content: space-evenly;
+                text-align: center;
+                grid-column: column;
+                background: transparent;
+                margin: 0px;
+                color: rgb(214, 176, 71);
+        }
+
+        .grid_items {
+                border: 1px solid white;
+                border-radius: 4px;
+                width: 100px;
+                height: 140px;
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+                padding: 1%;
+                margin: 1%;
+                justify-content: space-evenly;
+                background-color: white;
+                box-shadow: 0px 0px 2px transparent;
+
+
+
+        }
+
+        .link {
+                background-color: transparent;
+                text-decoration: none;
+                text-align: center;
+                color: black;
+        }
+
+        .link:hover {
+                color: black;
+
+        }
+
+        .grid_items:hover {
+                transform: scaleX(1.1);
+                background-color: rgb(236, 230, 210);
+                transition: cubic-bezier(0.47, 0, 0.745, 0.715) 5s linear;
+                animation: grid_items 1s ease alternate-reverse;
+                shadow: 0px 0px 4px solid black;
+                pointer: url(mobile.png);
+        }
+
+        @keyframes grid_items {
+
+                0%,
+                25% {
+                        background-color: rgb(230, 220, 170);
+                        position: relative;
+
+                }
+
+                25%,
+                50% {
+                        background-color: rgb(230, 221, 180);
+                        position: relative;
+
+
+                }
+
+                50%,
+                75% {
+                        background-color: rgb(230, 222, 190);
+                        position: relative;
+
+                }
+
+                75%,
+                100% {
+                        background-color: rgb(230, 223, 200);
+                        position: relative;
+
+                }
+        }
+
+        #Describe_container {
+                flex-flow: row;
+                overflow: scroll;
+                background-color: rgb(230, 222, 190);
+
+        }
+
+        #Describe_Images {
+
+                justify-content: center;
+                background-origin: content-box;
+
+                border-radius: 80%;
+                text-align: center;
+                display: flex;
+                overflow: hidden;
+                background-size: contain;
+                margin: 1%;
+                box-shadow: 0px 0px 10px solid rgb(230, 223, 200);
+
+
+        }
+
+        #Describe_Images img {
+                width: 150px;
+                height: 150px;
+                box-shadow: 0px 0px 4px solid rgb(230, 223, 200);
+
+
+        }
+
+        #Describe_Images:hover {}
+
+        #dark:hover {
+                background-color: black;
+                filter: opacity(77%);
+
+        }
+
+        #dark {
+                background: black;
+                color: white;
+
+                align-self: right;
+                align-items: right;
+                display: flex;
+                justify-content: end;
+                position: default;
+                filter: opacity(30%);
+
+
+        }
+
+        .dark {
+                width: 10%;
+                align-items: right;
+                display: flex;
+                align-items: right;
+                justify-content: end;
+                align-items: center;
+
+                top: 20%;
+
+
+        }
+        @media (width <= 498px){
+                
+                *{
+                        font-size: 14px;
+                }
+                
+              
+                
+                
+        }
+        @media (width >= 1200px){
+               .img-fluid{
+                       width: 150px;
+                       height: 150px;
+               }
+               
+        }
+        .navbar-toggler{
+                text-decoration: none;
+                border: transparent;
+                
+        }
+</style>
+<script>
+        function login() {
+
+                document.getElementById('login').style.display = "block";
+
+
+        }
+
+        function myFunction() {
+                document.body.style.backgroundColor = "rgb(40,40,40)";
+                document.getElementById('offcanvas').style.backgroundColor = "rgb(60,60,60)";
+                documemt.getElementById('offcanvas').style.color = "white";
+                document.getElementById('navlink').style.backgroundColor = "rgb(50,50,50)";
+                document.getElementById('navlink').style.border ="1px solid white";
+                
+
+
+        }
+</script>
+
+
+<body>
+
+        <div id="Dark">
+
+
+
+                <div class="main-nav">
+
+
+
+                        <div id="navbar" class=" shadow-lg mb-2 bg-body-dark rounded-p  w-100 z-10">
+
+
+
+                                <div class="container-fluid m-0 d-flex  " style="justify-content: space-between">
+                                        <a class="navbar-brand text-primary align-center text-center my-3" href="#"><img src="/1688271842127.png" style="width: 55px; height:55px; border-radius:10px margin-top:1px align:left;">
+                                                <font style="font-weight:bolder; font-family: RionaSansW01 ; font-style: italic; text-align: center; padding-top:10px;">Flipkart</font>
+                                        </a>
+                                        <form class="d-flex p-4 " role="search" style="display: flex; display: inline-block; flex-direction: row;" onkeyup="myFunction()">
+                                                <div class="py-1">
+
+                                                        <i class="bi bi-search position-absolute mx-3 py-1"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                                </svg></i> <input class=" form-control shadow-sm w-100  btn  btn-outline-secondary p-1" type="search" placeholder="Search...." aria-label="Search">
+                                                </div>
+                                                <!-- <button class="btn  btn-outline-secondary d-flex-inline btn-shadow-sm " type="submit">Search</button>-->
+                                        </form>
+
+
+                                        <button class="navbar-toggler  d-inline navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive" aria-expanded="false" aria-label="#offcanvasResponsiveLabel">
+                                                <span class="navbar-toggler-icon"></span>
+
+                                </div>
+
+
+
+                        </div>
+                </div>
+
+        </div>
+
+
+
+        <div class="alert alert-info  d-block"><img width="60px" height="40px" src="flogo.png.png" alt=""></div>
+
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas-header bg-primary text-white">
+                        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel text-primary text-center"><img src="/1688271842127.png" width="40px" height="40px" alt="">Flipkart</h5>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                </div>
+                <div id="offcanvas" class="container-fluid  shadow-sm overflow-scroll ">
+                        <box class=" shadow-sm">
+                                <a id="navlink" class="nav-link m-1  shadow-sm" href="index.html"><img src="home.png" alt="" width="40px" height="40px" style="padding:8px; background-color:transparent;"><text>Home </text></a>
+                                <a id="navlink" class="nav-link m-1 shadow-sm " href="flipkart.profile.html"><img src="Profile.png" alt="" width="36px" height="36px"style="margin:1px;"><text>Profile</text></a>
+                                <a id="navlink" class="nav-link m-1 shadow-sm" href="flipkart_cart.html"><img src="Cart Org.png" alt="" width="44px" height="38px" style="padding:6px;"><text>Cart</text></a>
+
+
+
+
+
+
+
+                                <a id="navlink" class="nav-link m-1  shadow-sm" href="flipkart_orders.html"><img src="Best..png" alt="" width="40px" height="40px" style="padding:4px;"><text>Orders</text></a>
+                                <a id="navlink" class="nav-link m-1  shadow-sm" href=""><img src="New whis.png" alt="" width="40px" height="40px" style="padding:4px;"><text>Whislist</text></a>
+                                <a id="navlink" class="nav-link m-1 shadow-sm" href=""><img src="Address.png" alt="" width="40px" height="40px" style="padding:2px;"><text>Address</text></a>
+                                <a id="navlink" class="nav-link m-1 shadow-sm" href="flipkart_coupan.html"><img src="Coupan.png" alt="" width="40px" height="40px" style="padding:6px;"><text>Coupons</text></a>
+                                <a id="navlink" class="nav-link m-1  shadow-sm" href="flipkart_catagory.html"><img src="catagories.png" alt="image not found" width="40px" height="40px" style="padding:8px;"><text>Categories</text></a>
+                                <a id="navlink" class="nav-link m-1  shadow-sm" href="flipkart_notification.html"><img src="Notification.png" alt="" width="40px" height="40px" style="padding:8px;"><text>Notification</text></a>
+                                <a id="navlink" class="nav-link m-1  shadow-sm" href=""><img src="Setting.png" alt="" width="40px" height="40px" style="padding:8px;"><text>Setting</text></a>
+                                <a id="navlink" class="nav-link m-1  shadow-sm" href=""><img src="Help.png" alt="" width="40px" height="40px" style="padding:8px;"><text>Help Center & 24×7 Customer Service</text></a>
+                                <a id="navlink" id="navlink" class="nav-link m-1  shadow-sm" href=""><img src="language.png" alt="language png" width="40px" height="40px" style="padding:8px;"><text> Select Language</text></a>
+
+                                <a id="navlink" class="nav-link m-1  shadow-sm" href="Terms & Conditions.html"><img src="term-policy-licn.png" alt="language png" width="40px" height="40px" style="padding:2px;"><text>Terms ,Policies & License </text></a>
+
+
+                        </box>
+                        <button id="log_btn" class="btn btn-light text-primary w-75 border shadow-sm mx-5 "><a id="link" class="nav-link " href="flipkartlogin.html">Login</a></button>
+                        <button id="log_btn" class="btn btn-light text-primary w-75 border shadow-sm mx-5 my-1"><a id="link" class="nav-link " href="">Logout</a></button>
+
+                        <a href="#"><button id="navlink" onclick="myFunction()" class="btn w-100 border shadow-sm my-2 p-2 bg-dark text-light">Dark theme</button></a>
+
+
+
+
+
+
+                </div>
+
+
+        </div>
+        </div>
+
+
+
+        <div>
+
+
+        </div>
+        </div>
+
+        <!-- Alert-->
+
+        <div class="alert_box">
+
+
+
+
+                <div class="container-fluid w-100">
+
+
+                        <div class="alert alert-primary alert-dismissible fade show d-block py-4  " role="alert">
+                                <strong>Dear Customer,</strong> Please Complete your profile and get 50% off on your first order
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div id="login" class="alert alert-success alert-dismissible fade show  py-4  " role="alert">
+                                <strong>Login Successful</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                </div>
+
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <div class="container-fluid bg-light " style=" ; display:block; flex-direction: row; overflow: hidden;">
+                </script>
+
+        </div>
+        </div>
+        </div>
+
+
+        <!-- Carousal-->
+        <div class="container-fluid rounded w-100">
+
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner rounded my-1">
+                                <div class="carousel-item active">
+                                        <img id="image" src="slid3.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                        <img id="image" src="slid1.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                        <img id="image" src="slid2.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                        <img id="image" src="slid2.png" class="d-block w-100" alt="...">
+                                </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+
+        </div>
+        <!-- Customized Navbar 
+                <div class="d-inline-flex  overflow-scroll  " style="width: 100%;  background-color: transparent;">
+                        <div id="Box" class="container-fluid d-inline-flex  overflow-scroll text-dark text-center  b shadow " style="width: 100% height:100%; align-item:center; background: transparent; z-index:1;">
+
+
+                                <box style="width: 10%; height: 10% margin:5px;  margin-left:5px; border-radius:30px"><img src="grocery.png" alt="" width: 100px; height: 100px>Text</box><br>
+                                <box style="width: 100px; height:10% margin:1%; margin-left:1%; padding:1% "><img src="ele.png" alt="" width: 100px; height: 100px><a href="" style="text-decoration: none; color: black;">Electronic</a></box><br>
+                                <box style="width: 100px; height: 100px; margin-left:1%; padding:1%"><img class="border border-rounded" src="mobile.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="">Mobiles</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="fashion.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="">Fashion</a></box><br>
+
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="appliance.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" style="text-decoration: none; color: black;" href="">Home Appliance</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="h7f.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="">Furniture</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="travel.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="">Travel</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="offer.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="">Offers</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="vehi.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="">Vehichel </a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="mobile.png
+    " alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="">Mobiles</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="vehi.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;" style="text-decoration: none; color: black;" href="">Vehicle</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="travel.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="#">Travel</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="grocery.png
+    " alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" vhref="">Grocery</a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="offer.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="">Offer </a></box><br>
+                                <box style="width: 100px; height: 100px margin-left:5%; padding:1%"><img src="mobile.png" alt="" width: 100px; height: 100px><a style="text-decoration: none; color: black;" href="New arrival">New Arrival</a></box><br>
+
+                        </div>
+                </div>
+                -->
+        <!-- Heading-->
+        <div class=" p-1 ">
+
+
+                <div class="Recently " >
+
+
+                        <h3 style=" margin-top:1px;">Recently watched product</h3>
+                </div>
+
+                <!-- Items feed -->
+                <div class="Recent_item rounded">
+
+
+                        <div class="container-fluid  d-inline-flex overflow-scroll body-bg-secondary rounded text-center p-1" style="justify-content:space-between;">
+
+
+                                <span class="container-fluid bg-white rounded shadow-sm border  d-inline-block  ">
+                                        <span class="badge text-bg-success  z-10 mx-1">Bestseller</span>
+                                        <a id="product" class="nav-link" href=""> <img src="/2451411c-8346-4b8e-b228-e60351d536161650342959173-DressBerry-Women-Mauve-Analogue-Watch-1341650342959089-7.jpg" alt="" width="160px" height="200px" style="border-radius:2px; margin-top: 1px; :hover width:160px height:210px;"><br>Buy Res Berry women watch <font color="lightgreen"><br>64% Off </font><br> Rs 6999/- </a>
+                                </span>
+                                <span class="container-fluid  w-0 rounded shadow-sm border  bg-light  d-inline-block mx-1 "><span class="badge text-bg-success">Bestseller</span>
+                                        <a id="product" class="nav-link" href=""> <img src="/IMG_20230702_104438.jpg" alt="" width="160px" margin-top="4px;" height="200px" style="border-radius: 4px;"><br> Buy NIKE <br>Air Max Running shoes for men <br>
+                                                <font color="lightgreen">40% off <br></font>Rs 3516/-
+                                        </a>
+                                </span>
+                                <span class="container-fluid w-0 rounded shadow-sm border  d-inline-block mx-1 bg-white"><span class="badge text-bg-success " style="font-family:sans-sarif;">Bestseller</span>
+                                        <a id="product" class="nav-link" href=""> <img src="/IMG_20230702_112629.jpg" alt="" width="160px" height="200px" style="border-radius:2px; margin-top: 1px; :hover width:160px height:210px;"><br>Buy Apple Airpods Pro <font color="lightgreen"><br> 80% Off</font><br> Rs 16,999/- </a>
+                                </span>
+
+                                <span class="container-fluid w-0 rounded shadow-sm border  d-inline-block mx-2  bg-white "><span class="badge text-bg-success ">Recommended</span>
+                                        <a id="product" class="nav-link" href=""> <img src="apple smartwatch .jpg" alt="" width="150px" height="200px" style="border-radius:2px; margin-top: 1px; :hover width:160px height:210px;"><br>Apple Watch SE GPS Aluminium Case with Sport Band<font color="lightgreen"><br>16% Off </font><br> Rs 26999/- </a>
+                                </span>
+                                <span class="container-fluid w-0 rounded shadow-sm border  d-inline-block mx-1 bg-white"><span class="badge text-bg-success">High rated</span>
+                                        <a id="product" class="nav-link" href=""> <img src="Sony.jpg" alt="" width="160px" height="200px" style="border-ra""dius:2px; margin-top: 1px; :hover width:160px padding:4px; height:210px;"><br>Sony - WH-XB910N
+                                                <br> Noise Cancelling Wireless Headphone<font color="lightgreen"><br>40% Off </font><br> Rs 13990/- </a>
+                                </span>
+
+
+                        </div>
+                </div>
+        </div>
+        <!-- Products -->
+
+        <span>
+                <div class="continue_shopping">
+
+
+                        <h3>Continue Shopping </h3>
+        </span>
+        <div class="container-fluid d-inline-flex overflow-scroll w-100 ">
+                <span class="container-fluid mx-1 w-100 ">
+                        <a href=""> <img id="product-image" src="airpods.jpg" styl class="object-fit-lg-fit border border-dark-subtle rounded" alt="..."></a> </span>
+                <span class="container-fluid mx-2mx-1 "> <a class="bg-transparent" href=""> <img id="product-image" src="apple smartwatch .jpg" class="object-fit-sm-contain border border-dark-subtle rounded" alt="..."></a> </span>
+                <span class="container-fluid mx-1 "> <a href=""> <img id="product-image" src="apple mobile.jpg" class="object-fit-sm-fit border border-dark-subtle rounded" alt="..."></a> </span>
+                <span class="container-fluid mx-1  "> <a href=""> <img id="product-image" src="FormalCat.jpg" class="object-fit-sm-fit border border-dark-subtle rounded" alt="..."></a> </span>
+                <span class="container-fluid mx-1 "> <a href=""> <img id="product-image" src="apple smartwatch .jpg" class="object-fit-sm-fit border border-dark-subtle rounded" alt="..."></a>
+                </span><span class="container-fluid mx-1 "> <a href=""> <img id="product-image" src="virat brand.jpg" class="object-fit-sm-fit border border-dark-subtle rounded" alt="..."></a>
+                </span>
+
+        </div>
+        </div>
+
+        <span>
+                <div class="bg-info-subtle p-1">
+
+
+                        <h3 class="">Describe for you</h3>
+        </span>
+
+
+        <div id="Describe_container" class="container-fluid w-100 bg-transparent   shadow-sm d-inline-flex overflow-scroll ">
+
+
+
+                <div id="Describe_Images" class="container-fluid   d-inline-flex fd-w "><span><img src="Des 1.jpeg" class=" " alt=""></span></div>
+                <div id="Describe_Images" class="container-fluid   bg-transparent   d-inlime-flex  "><img src="Des 2.jpeg" class="" alt=""></div>
+
+                <div id="Describe_Images" class="container-fluid    shadow-sm d-inline-flex  "><img src="Des 3.jpeg" class=" " alt=""></div>
+                <div id="Describe_Images" class="container-fluid   bg-transparent   d-inlime-flex  "><img src="Des 4.jpeg" class="" alt=""></div>
+
+                <div id="Describe_Images" class="container-fluid   bg-transparent  d-inlime-flex flex-row "><img src="Des 8.jpg" class="" alt=""></div>
+
+
+        </div>
+
+        <div class="container-fluid" style="background-color:#EBF4F5;  ">
+
+
+                <h4 style="">Sponsored</h4>
+
+
+
+
+                <div class="container-fluid d-flex overflow-scroll w-100 p-2 text-center">
+                        <div id="sponsored_product" class=" container-fluid  h-75">
+                                <a class="nav-link" href="">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="s1.jpg" class="card-img-top w-100 img-fluid border rounded p-1" alt="...">
+                                                <div>
+                                                        <p>
+                                                                <text1>From<price style="m-0">₹<s>5,999</s> 999</price>
+                                                                </text1>
+                                                        </p>
+                                                </div>
+                                        </div>
+                                </a>
+                        </div>
+
+
+                        <div class=" container-fluid  h-75">
+                                <a class="nav-link " href="">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="s1.jpg" class="card-img-top w-100 img-fluid border rounded p-1" alt="...">
+                                                <div>
+                                                        <p>
+                                                                <text1>From<price style="m-0">₹<s>6,999</s> 999</price>
+                                                                </text1>
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                        </div>
+                        <div class=" container-fluid  h-75">
+                                <a class="nav-link " href="">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="s1.jpg" class="card-img-top w-100 img-fluid border rounded p-1" alt="...">
+                                                <div>
+                                                        <p>
+                                                                <text1>From<price style="m-0">₹<s>5,999</s> 999</price>
+                                                                </text1>
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                        </div>
+                        <div class=" container-fluid  h-75">
+                                <a class="nav-link " href="">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="s1.jpg" class="card-img-top w-100 img-fluid border rounded p-1" alt="...">
+                                                <div>
+                                                        <p>
+                                                                <text1>From<price style="m-0">₹<s>5,999</s> 999</price>
+                                                                </text1>
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                        </div>
+                        <div class=" container-fluid  h-75">
+                                <a class="nav-link " href="">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="s1.jpg" class="card-img-top w-100 img-fluid border rounded p-1" alt="...">
+                                                <div>
+                                                        <p>
+                                                                <text1>From<price style="m-0">₹<s>5,999</s> 999</price>
+                                                                </text1>
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                        </div>
+                        <div class=" container-fluid  h-75">
+                                <a class="nav-link " href="">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="s1.jpg" class="card-img-top w-100 img-fluid border rounded p-1" alt="...">
+                                                <div>
+                                                        <p>
+                                                                <text1>From<price style="m-0">₹<s>5,999</s> 999</price>
+                                                                </text1>
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                        </div>
+                        <div id="" class=" container-fluid  h-75">
+                                <a class="nav-link " href="">
+                                        <div class="card" style="width: 18rem;">
+                                                <img src="s1.jpg" class="card-img-top w-100 img-fluid border rounded p-1" alt="...">
+                                                <div>
+                                                        <p>
+                                                                <text1>From<price style="m-0">₹<s>5,999</s> 999</price>
+                                                                </text1>
+                                                        </p>
+                                                </div>
+                                        </div>
+
+                        </div>
+                </div>
+        </div>
+        <!--Suggested-->
+        <div class="bg-warning-subtle  ">
+                <div class="Suggested_Inner_Head container-fluid  d-flex-inline" style="justify-content:space-between;">
+                        <div class=" d-flex w-100  " style="justify-content:space-between;">
+                                <h4>Suggested for you</h4>
+
+                                <i class="bi bi-arrow-right-circle-fill "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox=" 12 12">
+                                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                                        </svg></i>
+
+                        </div>
+
+
+
+
+                        <div class="Suggested_Items_Grid w-100   ">
+                                <div class="grid_items container-fluid  w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid" alt="" width="100px" height="140px"><br>Airpods
+                                        </a>
+                                </div>
+                                <div class="grid_items container-fluid w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid  " alt="" width="100px" height="130px"><br>Airpods
+                                        </a>
+                                </div>
+                                <div class="grid_items container-fluid w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid" alt="" width="100px" height="130px"><br>Airpods
+                                        </a>
+                                </div>
+                                <div class="grid_items container-fluid w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid" alt="" width="100px" height="130px"><br>Airpods
+                                        </a>
+                                </div>
+                                <div class="grid_items container-fluid w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid" alt="" width="100px" height="130px"><br>Airpods
+                                        </a>
+                                </div>
+                                <div class="grid_items container-fluid w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid" alt="" width="100px" height="130px"><br>Airpods
+                                        </a>
+                                </div>
+                                <div class="grid_items container-fluid w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid" alt="" width="100px" height="130px"><br>Airpods
+                                        </a>
+                                </div>
+                                <div class="grid_items container-fluid w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid" alt="" width="100px" height="130px"><br>Airpods
+                                        </a>
+                                </div>
+                                <div class="grid_items container-fluid w-25">
+                                        <a href="#" class="link">
+                                                <img src="airpods.jpg" class="img-fluid" alt="" width="100px" height="130px"><br>Airpods
+                                        </a>
+                                </div>
+
+                        </div>
+
+
+
+
+
+
+                </div>
+                <div class="fixed-bottom z-99 position-fixed  align-right w-25"><a href="flipkart.profile.html"><img src="Profile_picture.png" class=" rounded-circle  img-fluid w-50 shadow-lg" alt="" style="filter:opacity(60%);"></a></div>
+
+                <div class="fixed-bottom dark rounded-circle  z-99 position-fixed"><button id="dark" type="button" onclick="myFunction()" class="btn   rounded"><i class="bi bi-moon-stars-fill"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+                                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+                                        </svg></i</button>
+
+                </div>
+                <div class="container position-bottom w-100 bg-dark text-white text-center ">
+                        foooter......
+                </div>
+
+</body>
+
+</html>
